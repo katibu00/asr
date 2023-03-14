@@ -341,86 +341,86 @@
 
             let formData = new FormData($('#postResultForm')[0]);
 
-            var registered = $('#registered').val();
-            var accredited = $('#accredited').val();
-            var valid = $('#valid').val();
-            var rejected = $('#rejected').val();
-            var others = $('#others').val();
-            let parties = 0;
-            $('.party').each(function() {
-                parties += parseFloat($(this).val());
-            });
+            // var registered = $('#registered').val();
+            // var accredited = $('#accredited').val();
+            // var valid = $('#valid').val();
+            // var rejected = $('#rejected').val();
+            // var others = $('#others').val();
+            // let parties = 0;
+            // $('.party').each(function() {
+            //     parties += parseFloat($(this).val());
+            // });
 
-            if (parseInt(accredited) >  parseInt(registered)) {
-                Command: toastr["error"](
-                    "Accredited Voters Must not be greater than Registered Voters. please check your entry and try again"
-                );
-                toastr.options = {
-                    closeButton: false,
-                    debug: false,
-                    newestOnTop: false,
-                    progressBar: false,
-                    positionClass: "toast-top-right",
-                    preventDuplicates: false,
-                    onclick: null,
-                    showDuration: "300",
-                    hideDuration: "1000",
-                    timeOut: "5000",
-                    extendedTimeOut: "1000",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut",
-                };
-                return
-            }
-            var combined = parseInt(parties) + parseInt(others);
-            if (combined !=  parseInt(valid)) {
-                Command: toastr["error"](
-                    "Valid Votes must equal the sum of Individual Party Scores. please check your entry and try again"
-                );
-                toastr.options = {
-                    closeButton: false,
-                    debug: false,
-                    newestOnTop: false,
-                    progressBar: false,
-                    positionClass: "toast-top-right",
-                    preventDuplicates: false,
-                    onclick: null,
-                    showDuration: "300",
-                    hideDuration: "1000",
-                    timeOut: "5000",
-                    extendedTimeOut: "1000",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut",
-                };
-                return
-            }
-            if (parseInt(rejected)+parseInt(valid) != parseInt(accredited)) {
-                Command: toastr["error"](
-                    "Accredited Voters must equal the sum of Rejected and Valid Votes. please check your entry and try again"
-                );
-                toastr.options = {
-                    closeButton: false,
-                    debug: false,
-                    newestOnTop: false,
-                    progressBar: false,
-                    positionClass: "toast-top-right",
-                    preventDuplicates: false,
-                    onclick: null,
-                    showDuration: "300",
-                    hideDuration: "1000",
-                    timeOut: "5000",
-                    extendedTimeOut: "1000",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut",
-                };
-                return
-            }
+            // if (parseInt(accredited) >  parseInt(registered)) {
+            //     Command: toastr["error"](
+            //         "Accredited Voters Must not be greater than Registered Voters. please check your entry and try again"
+            //     );
+            //     toastr.options = {
+            //         closeButton: false,
+            //         debug: false,
+            //         newestOnTop: false,
+            //         progressBar: false,
+            //         positionClass: "toast-top-right",
+            //         preventDuplicates: false,
+            //         onclick: null,
+            //         showDuration: "300",
+            //         hideDuration: "1000",
+            //         timeOut: "5000",
+            //         extendedTimeOut: "1000",
+            //         showEasing: "swing",
+            //         hideEasing: "linear",
+            //         showMethod: "fadeIn",
+            //         hideMethod: "fadeOut",
+            //     };
+            //     return
+            // }
+            // var combined = parseInt(parties) + parseInt(others);
+            // if (combined !=  parseInt(valid)) {
+            //     Command: toastr["error"](
+            //         "Valid Votes must equal the sum of Individual Party Scores. please check your entry and try again"
+            //     );
+            //     toastr.options = {
+            //         closeButton: false,
+            //         debug: false,
+            //         newestOnTop: false,
+            //         progressBar: false,
+            //         positionClass: "toast-top-right",
+            //         preventDuplicates: false,
+            //         onclick: null,
+            //         showDuration: "300",
+            //         hideDuration: "1000",
+            //         timeOut: "5000",
+            //         extendedTimeOut: "1000",
+            //         showEasing: "swing",
+            //         hideEasing: "linear",
+            //         showMethod: "fadeIn",
+            //         hideMethod: "fadeOut",
+            //     };
+            //     return
+            // }
+            // if (parseInt(rejected)+parseInt(valid) != parseInt(accredited)) {
+            //     Command: toastr["error"](
+            //         "Accredited Voters must equal the sum of Rejected and Valid Votes. please check your entry and try again"
+            //     );
+            //     toastr.options = {
+            //         closeButton: false,
+            //         debug: false,
+            //         newestOnTop: false,
+            //         progressBar: false,
+            //         positionClass: "toast-top-right",
+            //         preventDuplicates: false,
+            //         onclick: null,
+            //         showDuration: "300",
+            //         hideDuration: "1000",
+            //         timeOut: "5000",
+            //         extendedTimeOut: "1000",
+            //         showEasing: "swing",
+            //         hideEasing: "linear",
+            //         showMethod: "fadeIn",
+            //         hideMethod: "fadeOut",
+            //     };
+            //     return
+            // }
 
 
             spinner =
