@@ -9,7 +9,7 @@ $route = Route::current()->getName();
         <span class="app-brand-logo demo">
    
         </span>
-        <span class="app-brand-text demo menu-text fw-bold">JSR</span>
+        <span class="app-brand-text demo menu-text fw-bold">Accord Party</span>
       </a>
 
       <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
